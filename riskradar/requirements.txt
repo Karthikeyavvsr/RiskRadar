@@ -1,0 +1,43 @@
+# riskradar/requirements.txt
+
+# Core Framework
+streamlit
+
+# Data Handling
+pandas
+numpy
+# sqlite3 is built-in, sqlite-utils not strictly needed for current app.py usage
+
+# Finance & Data APIs
+yfinance
+requests
+praw             # For Reddit sentiment
+feedparser       # For RSS feed fallback
+
+# API Interaction & Resilience
+tenacity         # For robust retries with backoff
+
+# Visualization
+plotly
+seaborn
+matplotlib      # Seaborn dependency, explicitly listing is good practice
+altair
+
+# NLP & Transformers
+transformers[torch] # Install torch variant for sentiment model
+# Alternatively, specify torch separately:
+# transformers
+# torch
+
+# Risk, Optimization, and Math
+scikit-learn     # For PCA, KMeans in risk_clusterer
+scipy            # Often a dependency for scientific computing, used in performance_metrics/XIRR
+
+# --- Potentially Unused/Future Dependencies (based on provided code) ---
+# cvxpy            # Optimization - Not used in provided MVP code
+# quantlib         # Advanced Finance - Not used in provided MVP code
+# firebase-admin   # Backend/DB - Not used in provided MVP code (using SQLite)
+
+# --- Recommended for Development/Performance ---
+# watchdog         # For faster Streamlit rerun on file changes
+# xformers         # Optional: for Hugging Face transformer performance (if using specific features/models)
