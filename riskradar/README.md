@@ -4,7 +4,7 @@
 
 It aims to democratize sophisticated financial modeling by integrating real-time market data, advanced sentiment analysis derived from social media (X/Twitter, Reddit) and news sources, and robust risk metrics into an accessible, interactive web application.
 
-**(Link to Live Demo - Placeholder for V2 Deployment)**
+
 **(Placeholder for Screenshot/GIF)**
 ## Overview
 
